@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+</head>
+
+<body>
+
+<h1>Team Wanted</h1>
+<div class="navigationbar">
+	<ul class="navigation" style="list-style-type:none">
+		<li class="bread">
+			<a href="/index/home.html">首页</a>
+		</li>
+		<li class="bread">
+			<a href="/index/home.html">公会介绍</a>
+		</li>
+		<li class="bread">
+			<a href="file:///C:/Users/Lynux/Desktop/html/wow.html">魔兽世界</a>
+		</li>
+		<li class="bread">
+			<a href="/index/home.html">坦克世界</a>
+		</li>
+		<li class="bread">
+			<a href="/index/home.html">相册集锦</a>
+		</li>
+		<li class="bread">
+			<a href="/index/home.html">现实周边</a>
+		</li>
+        <li class="breadright" ><a href="https://docs.google.com/forms/d/1k2Qlww6jU85f4vfRzxHQLD4CrGd9veusn3D8wZsorFM/viewform?edit_requested=true"/>加入WANTED</a>
+    </li>
+	</ul>
+</div>
+
+<div  >
+  <h2>相册集锦</h2>
+</div>
+<div class="album" >
+  <img class="mySlides" src="1.jpg" style="width:100%">
+  <img class="mySlides" src="2.jpg" style="width:100%">
+  <img class="mySlides" src="3.jpg" style="width:100%">
+  <img class="mySlides" src="t1.jpg" style="width:100%">
+  <img class="mySlides" src="t2.jpg" style="width:100%">
+  <img class="mySlides" src="t3.jpg" style="width:100%">
+
+  <div class=" rsection"  >
+    <p>艾泽拉斯:</p>
+    <div class="albumselection s4">
+      <img class="slides w3-border w3-hover-shadow" src="1.jpg" style="width:100%" onclick="currentDiv(1)">
+    </div>
+    <div class="albumselection s4">
+      <img class="slides w3-border w3-hover-shadow" src="2.jpg" style="width:100%" onclick="currentDiv(2)">
+    </div>
+    <div class="albumselection s4">
+      <img class="slides w3-border w3-hover-shadow" src="3.jpg" style="width:100%" onclick="currentDiv(3)">
+    </div>
+  </div>
+
+  <div class=" rsection" >
+    <p>铁血沙场</p>
+    <div class="albumselection s4">
+      <img class="slides w3-border w3-hover-shadow" src="t1.jpg" style="width:100%" onclick="currentDiv(4)">
+    </div>
+    <div class="albumselection s4">
+      <img class="slides w3-border w3-hover-shadow" src="t2.jpg" style="width:100%" onclick="currentDiv(5)">
+    </div>
+    <div class="albumselection s4">
+      <img class="slides w3-border w3-hover-shadow" src="t3.jpg" style="width:100%" onclick="currentDiv(6)">
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="connect">
+      <ul >联系我们:
+      <li class="footer">TS地址：173.199.64.244:9150  （无需密码)</li>
+      <li class="footer">xxx 邮箱:  123</li>
+      <li class="footer">公会微信:  123</li>
+      <li class="footer">xxx 微信:  123</li>
+      <li class="footer">xxx 微信:  123 </li>
+    </ul>
+  </div>
+  <div class="end">
+  <hr style="color: #d6f5d6">
+  <p style="color:white">Copyright © 2016 Team Wanted</p>
+  <p style="color:white">Designed and Coded by: Be (Liu Yuan),  Lyan</p>
+  </div >
+  </div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("slides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-border-red", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-border-red";
+}
+</script>
+
+
+</body>
+</html>
