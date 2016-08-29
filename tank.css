@@ -17,7 +17,7 @@ div.welcome{
     margin-left: 20px;
     margin-right: 10px;
     padding: 1em;
-    overflow:hiden;
+    overflow:visible;
 }
 
 div.link-photos{
