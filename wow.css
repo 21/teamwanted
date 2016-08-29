@@ -33,21 +33,51 @@ div.homeslide{
 }
 
 div.footer{
-
+    clear:both;
     height: 300px;
     padding-left: 20px;
     overflow:hidden;
     background-color: #111;
+    overflow:auto;
 }
 
 div.connect{
     float:left;
-    max-width: 700px;
+    color:yellow;
+    max-width:  350px
+    height: 200px;
+    font-size:100%;
+    margin-left: 10px;
+    margin-top: 0;
+    padding: 1em;
+    overflow:visible;
+}
+
+div.wowlink{
+    float:left;
+    color:yellow;
+    font-size:100%;
+    max-width: 350px;
     height: 200px;
     margin-left: 10px;
     margin-top: 0;
     padding: 1em;
+    overflow:visible;
 }
+
+div.tanklink{
+    
+    float:left;
+    font-size:100%;
+    color:yellow;
+    max-width:  350px
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 0;
+    padding: 1em;
+     overflow:visible;
+}
+
 
 div.end{
     clear: both;
@@ -109,6 +139,7 @@ li.breadright  a:hover:not(.active) {
 
 li.footer{
     color: white;
+    font-size:86%;
 }
 
 li.officer{
