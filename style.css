@@ -18,14 +18,6 @@ div.welcome{
     padding: 1em;
 }
 
-div.tankwelcome{
-    float:left;
-    width:60%;
-    max-width: 450px;
-    height: 1200px;
-    margin-right: 10px;
-    padding: 1em;
-}
 
 div.homelinks{
     float:left;
@@ -99,30 +91,7 @@ div.connect{
     overflow:visible;
 }
 
-div.wowlink{
-    float:left;
-    color:yellow;
-    font-size:100%;
-    max-width: 350px;
-    height: 200px;
-    margin-left: 10px;
-    margin-top: 0;
-    padding: 1em;
-    overflow:visible;
-}
 
-div.tanklink{
-    
-    float:left;
-    font-size:100%;
-    color:yellow;
-    max-width:  350px
-    height: 200px;
-    margin-left: 10px;
-    margin-top: 0;
-    padding: 1em;
-     overflow:visible;
-}
 
 div.end{
     clear: both;
